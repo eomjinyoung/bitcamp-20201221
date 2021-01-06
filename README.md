@@ -101,5 +101,15 @@
     - [] Java IDE(Integrated Development Environment, 예: Eclipse)를 설치하고 설정할 수 있는가?
 
 
+## 11일차(2021-01-06,수)
+
+- 바이트코드 프로그래밍 
+    - 직접 바이트코드를 작성해보기
+    - 자바 언어를 이용한 프로그래밍의 이점을 이해하기
+    - sublime 에디터 설치
+    - HelloWorld.class 작성하기
+    - https://medium.com/@davethomas_9528/writing-hello-world-in-java-byte-code-34f75428e0ad
+ 
+
 
 
