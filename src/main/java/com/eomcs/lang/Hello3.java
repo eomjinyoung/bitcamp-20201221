@@ -18,8 +18,8 @@ package com.eomcs.lang;
 //
 //## 소스 파일의 위치
 //- 소스 파일 찾고 관리하기 쉽도록 패키지와 일치하는 폴더에 둔다.
-//   /src/main/java/패키지명/패키지명/패키지명/소스파일    
-//- 예) /src/main/java/com/eomcs/basic/Hello3.java
+//   /src/main/java/패키지명/패키지명/패키지명/소스파일   
+//- 예) /src/main/java/com/eomcs/basic/Hello3.java 
 //
 //## 클래스 파일(.class)의 위치
 //- 컴파일러가 생성한 .class 파일은 무조건 패키지 이름과 같은 폴더에 있어야 한다.
