@@ -83,7 +83,13 @@
     - GCC 컴파일러(MinGW) 설치
     - hello.c 소스 작성
     - 컴파일 및 실행
+- 인터프리터 방식 프로그래밍 경험
+    - Nodejs 설치
+    - Hello.js 소스 작성
+    - 인터프리터 실행
 - JDK와 JRE, JavaSE, JavaEE, JavaME 소개
+    - Hello.java 소스 작성
+    - 컴파일 및 JVM 실행
 - JDK 및 Eclipse IDE 설치 및 설정
 
 
@@ -164,3 +170,6 @@
     - [] 문자의 2진수 표현을 정의한 것을 무엇이라 부르는가?
     - [] character set의 다양한 종류(ASCII,ISO-8859-1,EUC-KR,조합형,MS949,Unicode,UTF-8,UTF16)와 그 특징을 설명할 수 있는가?
     - [] 자바에서는 UTF-16BE(UCS2)을 기본 character set으로 사용한다는 것을 아는가?
+
+
+## 14일차(2021-01-11,월)
