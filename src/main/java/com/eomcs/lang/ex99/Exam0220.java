@@ -21,7 +21,8 @@ public class Exam0220 {
     // 재직여부? y
     // y
     System.out.print("이름? ");
-    System.out.println(keyScan.nextLine());
+    String str = keyScan.nextLine();
+    System.out.println(str);
     System.out.print("전화? ");
     System.out.println(keyScan.nextLine());
     System.out.print("이메일? ");
