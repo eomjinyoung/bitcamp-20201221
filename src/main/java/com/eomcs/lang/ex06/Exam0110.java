@@ -24,8 +24,10 @@ public class Exam0110 {
         19) System
     .
     out.
-    println(
-        "성인이다.")
+    println
+    (
+        "성인이다."
+        )
     ;
   }
 }
