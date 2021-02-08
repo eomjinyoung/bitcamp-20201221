@@ -533,4 +533,22 @@
     - ex06 : 다형성의 활용
 - 자바 기본 클래스 사용법(com.eomcs.basic)
     - ex0 : 
+- 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
+    - 19-a 단계: 자료구조 구현과 활용 : 스택 구현과 사용
 - 학습 목표 달성 확인 목록
+
+## 35일차(2021-02-08,월)
+
+- 객체지향 문법(com.eomcs.oop)
+    - ex08 : 캡슐화에서 protected 활용(복습)
+- 자바 기본 클래스 사용법(com.eomcs.basic)
+    - ex01 : Exam0170 ~ Exam0175, clone()을 이용한 인스턴스 shallow copy, deep copy
+- 알고리즘(com.eomcs.algorithm.data_structure)
+    - queue, stack : 큐, 스택 구현 방법 및 사용법(복습)
+- 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
+    - 19-a 단계: 자료구조 구현과 활용 : 스택 구현과 사용(계속)
+    - 19-b 단계: 자료구조 구현과 활용 : 큐 구현과 사용
+    - 20-a 단계: `Iterator` 디자인 패턴 : 데이터 조회 기능을 캡슐화
+    - 20-b 단계: `Iterator` 디자인 패턴 : XxxIterator 에 대해 Generalization 수행 
+- 학습 목표 달성 확인 목록
+    - [] 
