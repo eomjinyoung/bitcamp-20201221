@@ -575,4 +575,8 @@
 - 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
     - 20-c 단계: `Iterator` 디자인 패턴 : Iterator 패턴에 인터페이스 문법 적용
     - 20-d 단계: `Iterator` 디자인 패턴 : GRASP의 Creator 패턴 적용
+    - 20-e 단계: `Iterator` 디자인 패턴 : 스태틱 중첩 클래스(static nested class) 활용
+    - 20-f 단계: `Iterator` 디자인 패턴 : 논스태틱 중첩 클래스(inner class) 활용
+    - 20-g 단계: `Iterator` 디자인 패턴 : 로컬 클래스(local class) 활용
+    - 20-h 단계: `Iterator` 디자인 패턴 : 익명 클래스(anonymous class) 활용
 - 학습 목표 달성 확인 목록
