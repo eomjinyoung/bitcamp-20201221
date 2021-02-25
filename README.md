@@ -743,5 +743,25 @@
 
 - 파일 입출력 API 사용법(com.eomcs.io)
     - FileInputStream/FileOutputStream 클래스 사용법(계속)
-    - 
+    - FileReader/FileWriter 클래스 사용법
+- 학습 목표 달성 확인 목록
+    - [] 바이너리 파일과 텍스트 파일을 구분할 수 있는가?
+    - [] 바이트 스트림 클래스와 문자 스트림 클래스를 구분하여 설명할 수 있는가?
+    - [] 데이터 싱크(sink) 타입에 따라 클래스를 구분하여 설명할 수 있는가?
+    - [] FileInputStream/FileOutputStream으로 텍스트 출력을 다룰 수 있는가?
+    - [] FileInputStream/FileOutputStream 클래스와 FileReader/FileWriter 클래스의 사이이 차이점을 이해하는가?
+    - [] JVM 환경 변수 "file.encoding" 의 사용법을 아는가?
+    - [] 드라이버 소프트웨어가 무엇인지 아는가?
+    - [] 스트리밍 API의 등장 이유를 아는가?
+    - [] FileReader/FileWriter 사용법
+    - [] 데이터 프로세싱 스트림 클래스의 역할을 이해하는가?
+    - [] 데이터를 입출력할 때 버퍼를 사용하는 이유를 아는가?
+    - [] 파일에서 읽은 1바이트를 4바이트 int 값으로 변환할 때 주의할 점을 아는가?
+
+## 45일차(2021-02-25,목)
+
+- 파일 입출력 API 사용법(com.eomcs.io)
+    - 데이터 프로세싱 스트림 클래스 구동원리 이해와 구현
+    - 데코레이터 패턴 사용법
+    - Java에서 제공하는 데이터 프로세싱 스트림 클래스 사용법
 - 학습 목표 달성 확인 목록
