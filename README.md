@@ -781,4 +781,9 @@
 
 - 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
     - 25-a 단계: 파일 입출력 API : 바이너리 형식으로 데이터를 읽고 쓰기(FileInputStream/FileOutputStream)
+    - 25-b 단계: 파일 입출력 API : 데코레이터 객체 활용하기(DataInputStream/DataOutputStream)
+    - 25-c 단계: 파일 입출력 API : 버퍼 사용하기(BufferedInputStream/BufferedOutputStream)
+    - 25-d 단계: 파일 입출력 API : 객체 읽고 쓰기(ObjectInputStream/ObjectOutputStream)
+    - 25-e 단계: 파일 입출력 API : 리팩터링 I
 - 학습 목표 달성 확인 목록
+    - [] 
