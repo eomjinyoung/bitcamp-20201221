@@ -786,4 +786,22 @@
     - 25-d 단계: 파일 입출력 API : 객체 읽고 쓰기(ObjectInputStream/ObjectOutputStream)
     - 25-e 단계: 파일 입출력 API : 리팩터링 I
 - 학습 목표 달성 확인 목록
-    - [] 
+    - [] 바이너리 파일과 텍스트 파일을 구분할 수 있는가?
+    - [] FileInputStream과 FileOutputStream 클래스의 사용 방법을 아는가?
+    - [] 데코레이터 패턴의 구조와 특징을 이해하는가?
+    - [] 자바의 스트리밍 API에 데코레이터 패턴이 적용된 것을 설명할 수 있는가?
+    - [] DataInputStream/DataOutputStream 클래스의 용도를 아는가?
+    - [] 입출력에 버퍼를 적용했을 때 이점을 아는가?
+    - [] BufferedInputStream/BufferedOutputStream 클래스를 구현할 수 있는가?
+    - [] ObjectInputStream/ObjectOutputStream 클래스의 용도를 아는가?
+    - [] 직렬화(serialization)/객체 복원(deserialization)의 동작 원리를 설명할 수 있는가?
+    - [] 제넥릭을 사용하여 다양한 타입의 파라미터 값이나 리턴 값을 처리할 수 있는가?
+
+## 47일차(2021-03-02,화)
+
+- 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
+    - 26-a 단계: 파일 입출력 API : 텍스트 형식(CSV 파일 포맷)으로 데이터를 읽고 쓰기(FileReader/FileWriter)
+    - 26-b 단계: 파일 입출력 API : 버퍼 사용하기(BufferedReader/BufferedWriter)
+    - 26-c 단계: 파일 입출력 API : 리팩터링 I
+    - 26-d 단계: 파일 입출력 API : 리팩터링 II
+- 학습 목표 달성 확인 목록
