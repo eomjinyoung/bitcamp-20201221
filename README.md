@@ -805,3 +805,28 @@
     - 26-c 단계: 파일 입출력 API : 리팩터링 I
     - 26-d 단계: 파일 입출력 API : 리팩터링 II
 - 학습 목표 달성 확인 목록
+    - [] FileReader/FileWriter 클래스의 사용법을 아는가?
+    - [] CSV 파일 포맷을 이해하는가?
+    - [] MIME 에 대해 설명할 수 있는가?
+    - [] BufferedReader/BufferedWriter 데코레이터를 사용할 수 있는가?
+    - [] GRASP의 Information Expert 패턴을 이해하는가?
+    - [] GoF 의 Factory Method 패턴을 구현할 수 있는가?
+    - [] 인터페이스의 용법을 아는가?
+    - [] *functional interface*를 아는가?
+    - [] 메서드 레퍼런스의 용법을 아는가?
+    - [] 클래스의 스태틱 메서드를 functional interface의 구현체로 사용할 수 있는가?
+    - [] 클래스의 생성자를 메서드 functional interface의 구현체로 사용할 수 있는가?
+    - [] 제네릭 문법을 활용할 수 있는가?
+
+## 48일차(2021-03-03,수)
+
+- 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
+    - 27 단계: JSON 형식으로 객체를 읽고 쓰기 : Gson 라이브러리 활용
+    - 28-a 단계: `Observer` 디자인 패턴 : 프로젝트에 적용하기
+    - 28-b 단계: `Observer` 디자인 패턴 : `Observer` 객체를 통해 파일 다루기
+- 학습 목표 달성 확인 목록
+    - [] JSON 형식을 아는가?
+    - [] CSV 형식과 XML/JSON 형식을 비교 설명할 수 있는가?
+    - [] XML과 JSON을 비교 설명할 수 있는가?
+    - [] JSON 라이브러리인 Gson을 사용할 수 있는가?
+
