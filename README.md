@@ -825,8 +825,38 @@
     - 28-a 단계: `Observer` 디자인 패턴 : 프로젝트에 적용하기
     - 28-b 단계: `Observer` 디자인 패턴 : `Observer` 객체를 통해 파일 다루기
 - 학습 목표 달성 확인 목록
+    - [] 메타데이터,마크업,태그 용어를 설명할 수 있는가?
     - [] JSON 형식을 아는가?
     - [] CSV 형식과 XML/JSON 형식을 비교 설명할 수 있는가?
     - [] XML과 JSON을 비교 설명할 수 있는가?
     - [] JSON 라이브러리인 Gson을 사용할 수 있는가?
+    - [] functional interface가 무엇인지 설명할 수 있는가?
+    - [] functional interface의 구현체를 만드는 다양한 방법을 아는가?
+    - [] Observer 디자인 패턴의 특징과 이점을 이해하는가?
+    - [] Observer 디자인 패턴의 클래스 구조를 프로젝트에 적용할 수 있는가?
+    - [] 스트리밍 API의 옵저버 패턴을 설명할 수 있는가?
 
+## 49일차(2021-03-04,목)
+
+- 네트워킹 API 사용법(com.eomcs.net)
+    - ex01 : 네트워킹 개념과 프로그래밍 기법 소개
+    - ex02 : ServerSocket과 Socket 클래스 사용법
+    - ex03 : 소켓 간 데이터 입출력 방법
+- 학습 목표 달성 확인 목록
+    - [] Hub, Gateway, Router, DNS 서버의 역할을 이해하는가?
+    - [] 일반 허브와 스위치 허브의 차이점을 이해하는가?
+    - [] LAN, WAN, Internet, Intranet 용어를 설명할 수 있는가?
+    - [] IP 주소와 포트 번호가 무엇인지 아는가?
+    - [] IP 주소를 xxx.xxx.xxx.xxx 형식으로 표기하는 이유를 아는가?
+    - [] IPv4, 사설 IP 주소, IPv6의 관계를 설명할 수 있는가?
+    - [] ServerSocket의 용도와 대기열을 이해하는가?
+    - [] ServerSocket의 대기열을 제어할 수 있는가?
+    - [] ServerSocket의 accept() 용법을 아는가?
+    - [] Socket을 이용하여 데이터를 입출력 할 수 있는가?
+
+## 50일차(2021-03-05,금)
+
+- 네트워킹 API 사용법(com.eomcs.net)
+    - ex04 : 
+- 학습 목표 달성 확인 목록
+    - [] 
