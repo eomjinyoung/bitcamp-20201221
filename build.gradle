@@ -12,10 +12,10 @@ plugins {
 }
 
 // 자바 소스를 컴파일 할 때 적용할 옵션
-tasks.withType(JavaCompile) {
+//tasks.withType(JavaCompile) {
     // $javac -encoding UTF-8 ...
-    options.encoding = 'UTF-8';
-}
+//    options.encoding = 'UTF-8';
+//}
 
 // .class 파일을 둘 폴더를 지정하지 않으면 
 // Gradle 은 기본 출력 폴더의 경로로 'bin/default' 를 사용한다.
@@ -53,4 +53,13 @@ repositories {
 // 프로젝트에서 사용할 자바 라이브러리 목록
 dependencies {
     // 현재 특별하게 사용할 라이브러가 없기 때문에 일단 비워둔다.
+    implementation 'org.mariadb.jdbc:mariadb-java-client:2.7.2'
+    implementation 'com.oracle.database.jdbc:ojdbc10-production:19.10.0.0'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:9.2.1.jre11'
 }
+
+
+
+
+
+
