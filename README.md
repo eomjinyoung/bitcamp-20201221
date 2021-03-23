@@ -1023,3 +1023,21 @@
 - JDBC 프로그래밍
     - SQL : DQL(계속)
 - 학습 목표 달성 확인 목록
+    - [] select 절에서 distinct 와 all의 차이점을 구분할 수 있는가?
+    - [] order by 절을 이용하여 결과 데이터를 정렬할 수 있는가?
+    - [] select 절에서 컬럼에 별명을 부여할 수 있는가?
+    - [] 질의 결과를 합치는 union과 union all의 차이점을 아는가?
+    - [] cross join과 natural join을 수행할 수 있는가?
+    - [] cross join의 문제점과 natural join의 문제점을 아는가?
+    - [] cross join과 natural join의 문제점을 해결할 수 있는가?
+    - [] inner join과 outer join을 수행할 수 있는가?
+    - [] inner join과 outer join의 차이점을 아는가?
+    - [] select 절에서 서브 쿼리를 사용할 수 있는가?
+    - [] from 절에서 서브 쿼리를 사용할 수 있는가?
+    - [] where 절에서 서브 쿼리를 사용할 수 있는가?
+
+## 62일차(2021-03-23,화)
+
+- JDBC 프로그래밍(com.eomcs.jdbc)
+    - JDBC 드라이버 사용법
+- 학습 목표 달성 확인 목록
