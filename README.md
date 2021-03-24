@@ -1039,5 +1039,12 @@
 ## 62일차(2021-03-23,화)
 
 - JDBC 프로그래밍(com.eomcs.jdbc)
-    - JDBC 드라이버 사용법
+    - ex0 ~ ex1: JDBC 드라이버 사용법
+- 학습 목표 달성 확인 목록
+
+## 63일차(2021-03-24,수)
+
+- JDBC 프로그래밍(com.eomcs.jdbc)
+    - ex1(Exam0210 부터): JDBC 드라이버 사용법(계속)
+    - ex2 : Statement, PreparedStatement, ResultSet 등 사용법
 - 학습 목표 달성 확인 목록
