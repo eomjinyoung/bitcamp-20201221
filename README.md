@@ -1041,6 +1041,12 @@
 - JDBC 프로그래밍(com.eomcs.jdbc)
     - ex0 ~ ex1: JDBC 드라이버 사용법
 - 학습 목표 달성 확인 목록
+    - [] JDBC API와 JDBC 드라이버의 관계를 아는가?
+    - [] 실무에서 말하는 API의 이중적인 의미를 이해하는가?
+    - [] Driver/Connection/Statement/ResultSet 객체의 역할을 아는가?
+    - [] JDBC 프로그래밍의 코드 흐름을 이해하는가?
+    - [] Driver 객체를 DriverManager에게 등록하는 다양한 방법을 아는가?
+
 
 ## 63일차(2021-03-24,수)
 
@@ -1048,3 +1054,22 @@
     - ex1(Exam0210 부터): JDBC 드라이버 사용법(계속)
     - ex2 : Statement, PreparedStatement, ResultSet 등 사용법
 - 학습 목표 달성 확인 목록
+    - [] Connection 객체와 Statement 객체, ResultSet 객체를 얻는 방법을 아는가?
+    - [] insert/update/delete을 실행하는 방법과 select 를 실행하는 방법을 아는가?
+    - [] CRUD 용어를 설명할 수 있는가?
+    - [] SQL 삽입 공격을 설명할 수 있는가?
+    - [] SQL 삽입 공격을 막는 방법을 아는가?
+    - [] Statement와 PreparedStatement 객체의 차이점을 설명할 수 있는가?
+    - [] insert 를 실행한 후 자동 증가된 PK 값을 알아 낼 수 있는가?
+    - [] 트랜잭션을 설명할 수 있는가?
+    - [] 트랜잭션을 다루는 방법을 아는가? commit/rollback을 다룰 수 있는가?
+    - [] 
+
+## 64일차(2021-03-25,목)
+
+- JDBC 프로그래밍(com.eomcs.jdbc)
+    - ex3 : DAO, DTO의 활용 
+- 학습 목표 달성 확인 목록
+    - [] DAO 의 역할을 설명할 수 있는가?
+    - [] DTO, Domain Object, VO 객체를 설명할 수 있는가?
+    - [] DAO를 구현할 수 있는가?
