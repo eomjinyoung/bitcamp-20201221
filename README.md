@@ -1105,3 +1105,4 @@
 
 - Mybatis Persistence 프레임워크(com.eomcs.mybatis)
     - ex01 : Mybatis 설정 및 SqlSession 객체 준비하기
+    - ex02 : SQL 문을 실행하는 방법
