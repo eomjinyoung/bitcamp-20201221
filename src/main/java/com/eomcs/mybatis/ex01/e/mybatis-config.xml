@@ -4,7 +4,13 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-  <properties resource="com/eomcs/mybatis/ex01/c/jdbc.properties"></properties>
+  <properties resource="com/eomcs/mybatis/ex01/e/jdbc.properties"></properties>
+
+  <typeAliases>
+    <!-- 패키지에 소속된 모든 클래스에 대해 별명을 자동으로 부여할 수 있다.
+         클래스 이름이 별명으로 설정된다.-->
+    <package name="com.eomcs.mybatis.ex01.e"/>
+  </typeAliases>
 
   <environments default="development">
     <environment id="development">
@@ -18,13 +24,8 @@
     </environment>
   </environments>
   
-  <!-- SQL문을 모아둔 파일(SQL 맵퍼 파일이라 부른다)을 지정한다.
-       SQL 맵퍼 파일에 작성해 둔 SQL문을 mybatis가 사용할 것이다. -->
   <mappers>
-  
-    <!-- 맵퍼 파일의 경로를 지정할 때 classpath 경로를 사용해야 한다.
-         단 패키지명을 구분할 때 '.' 대신에 '/'를 사용해야 한다. -->
-    <mapper resource="com/eomcs/mybatis/ex01/c/BoardMapper.xml"/>
+    <mapper resource="com/eomcs/mybatis/ex01/e/BoardMapper.xml"/>
   </mappers>
 </configuration>
 
