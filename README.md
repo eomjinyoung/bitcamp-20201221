@@ -1101,3 +1101,7 @@
     - 31-b 단계: 데이터 처리 코드를 별도의 클래스로 분리하기 : DAO 인터페이스 도입
     - 31-c 단계: 데이터 처리 코드를 별도의 클래스로 분리하기 : 의존 객체 주입과 DB 커넥션 객체 공유하기, 명시적인 rollback
     
+## 69일차(2021-04-01,목)
+
+- Mybatis Persistence 프레임워크(com.eomcs.mybatis)
+    - ex01 : Mybatis 설정 및 SqlSession 객체 준비하기
