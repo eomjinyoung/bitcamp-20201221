@@ -17,6 +17,13 @@
     values(#{title}, #{content}, now())
   </insert>
   
+  <!-- insert(sqlId, Board) -->
+  <insert id="insert3" parameterType="board" 
+          useGeneratedKeys="true" keyColumn="board_id" keyProperty="no">
+    insert into x_board(title,contents,created_date)
+    values(#{title}, #{content}, now())
+  </insert>
+  
   <!-- update(sqlId, Board) -->
   <update id="update" parameterType="board">
     update x_board set
