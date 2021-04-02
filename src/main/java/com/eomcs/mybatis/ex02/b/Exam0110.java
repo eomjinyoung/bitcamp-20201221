@@ -1,4 +1,4 @@
-// SqlSession 사용법 - select 문 실행하기 : 목록 출력
+// SqlSession 사용법 - select 문 실행하기 : 목록 출력 => selectList()
 package com.eomcs.mybatis.ex02.b;
 
 import java.util.List;
@@ -13,6 +13,10 @@ public class Exam0110 {
     SqlSession sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream(
         "com/eomcs/mybatis/ex02/b/mybatis-config.xml")).openSession();
 
+    // selectList()
+    // => select 문의 결과가 여러 개일 때 사용한다.
+    // => 결과가 없으면 size 가 0인 List 객체를 리턴한다.
+    //
     List<Board> boards = sqlSession.selectList("BoardMapper.selectBoard");
 
     for (Board b : boards) {
