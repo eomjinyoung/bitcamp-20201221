@@ -61,7 +61,21 @@
       created_date, 
       view_count  
     from x_board
+    where board_id &lt; #{no}
+  </select>
+  
+  <!-- selectList(sqlid, int) --> 
+  <select id="selectBoard4" resultMap="BoardMap" parameterType="int">
+  <![CDATA[
+    select 
+      board_id, 
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
     where board_id < #{no}
+  ]]>
   </select>
   
 </mapper>
