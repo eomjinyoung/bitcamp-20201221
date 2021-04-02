@@ -1,4 +1,4 @@
-// #{} 과 ${} 차이점 => ${} 문법의 활용 II
+// #{} 과 ${} 차이점 => ${} 문법의 쓰임새 II
 package com.eomcs.mybatis.ex03.f;
 
 import java.util.List;
