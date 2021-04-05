@@ -55,7 +55,7 @@
     order by ${sort}
   </select>
   
-    <!-- 
+  <!-- 
      ${} 는 SQL 코드를 삽입할 수 있다.
    -->
   <select id="countRecords" resultType="int" parameterType="string">
@@ -63,6 +63,16 @@
       count(*)  
     from ${tableName}
   </select>
+  
+  <delete id="delete1" parameterType="string">
+    delete from x_board
+    where title = #{value}
+  </delete>
+  
+  <delete id="delete2" parameterType="string">
+    delete from x_board
+    where ${condition}
+  </delete>
 </mapper>
 
 
