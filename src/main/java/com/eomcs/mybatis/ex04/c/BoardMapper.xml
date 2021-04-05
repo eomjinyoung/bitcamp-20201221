@@ -93,6 +93,24 @@
     order by board_id desc
   </select>
   
+  <select id="select0230" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    <trim prefix="where" prefixOverrides="or|and">
+      <if test="title != null">
+        title like concat('%', #{title}, '%')
+      </if>
+      <if test="contents != null">
+        and contents like concat('%', #{contents}, '%')
+      </if>
+    </trim>   
+    order by board_id desc
+  </select>  
   <!-- 특정 조건이 있을 경우에만 select를 수행할 때, 
        1) 조건이 없으면 결과를 리턴하지 않는 방법-->
   <select id="select0310" resultMap="BoardMap" parameterType="map">

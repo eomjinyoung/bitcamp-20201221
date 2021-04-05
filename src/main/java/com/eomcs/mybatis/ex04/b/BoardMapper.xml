@@ -57,6 +57,30 @@
     order by board_id desc
   </select>
   
+  <!-- 조건이 여러 개일 경우 if 태그 보다 choose 태그가 더 편리하다.
+       자바의 switch 문과 사용법이 비슷하다. -->
+  <select id="select4" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    where 
+    <choose>
+      <when test="menuNo == 1">
+        title like concat('%', #{keyword}, '%')
+      </when>
+      <when test="menuNo == 2">
+        contents like concat('%', #{keyword}, '%')
+      </when>
+      <otherwise>
+        1!=1
+      </otherwise>
+    </choose>
+    order by board_id desc
+  </select>
 </mapper>
 
 

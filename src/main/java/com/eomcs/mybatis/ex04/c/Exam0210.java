@@ -49,7 +49,9 @@ public class Exam0210 {
     //   - <where> 태그를 사용하면 
     //     1. 조건이 비어 있을 때 where 절을 붙이기 않는다. 
     //     2. and, or 잔여물이 붙어 있을 때 자동으로 제거한다. 
-    // 
+    //   - <trim> 태그를 사용하면
+    //     1. 제목이 빠진 후에 내용 조건을 검사하는 코드 앞에 and 가 붙는 것을 제거할 수 있다.
+    //
     HashMap<String,Object> params = new HashMap<>();
 
     if (title.length() > 0) {
