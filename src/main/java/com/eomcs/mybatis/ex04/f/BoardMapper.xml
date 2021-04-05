@@ -10,6 +10,29 @@
     insert into x_board_file(file_path, board_id)
     values(#{filePath}, #{boardNo})
   </insert>
+  
+  <!-- foreach 태그를 사용하여 여러 개의 첨부파일을 한 번에 입력하기 -->
+  <insert id="insert2" parameterType="map">
+    insert into x_board_file(file_path, board_id)
+    values 
+    <foreach collection="files" item="attachFile" separator="," >
+      (#{attachFile.filePath}, #{boardNo})
+    </foreach>
+  </insert>
+  
+  <!-- 위의 코드는 다음의 자바 코드와 같은 의미다.
+    ArrayList<AttachFile> files = (ArrayList<AttachFile>)map.get("files");
+    StringBuilder strBuilder = new StringBuilder();
+    strBuilder.append("insert into x_board_file(file_path, board_id) ");
+    strBuilder.append("values ");
+    int count = 0;
+    for (AttachFile attachFile : files) {
+      if (count > 0) {
+        strBuilder.append(",");
+      }
+      strBuilder.append("(" + attachFile.getFilePath() + ", " + map.get("boardNo") + ")");
+    }
+   -->
 
 </mapper>
 

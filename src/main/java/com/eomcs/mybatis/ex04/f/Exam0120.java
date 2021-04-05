@@ -1,14 +1,15 @@
-// insert 문에 foreach를 사용할 필요성
+// insert 문에 foreach를 사용하기
 package com.eomcs.mybatis.ex04.f;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import com.eomcs.mybatis.vo.AttachFile;
 
-public class Exam0110 {
+public class Exam0120 {
 
   public static void main(String[] args) throws Exception {
 
@@ -33,19 +34,19 @@ public class Exam0110 {
     SqlSession sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream(
         "com/eomcs/mybatis/ex04/f/mybatis-config.xml")).openSession(true);
 
-    // 게시글의 첨부파일을 저장하기
-    // - List 에 보관된 개수만큼 반복해서 insert를 실행한다.
-    // - SQL을 실행한다는 것은 DBMS에 SQL 실행을 요청한다는 의미다.
-    // - 여러 번 실행한다는 것은 DBMS에 여러 번 요청한다는 의미다.
-    // - 즉 네트워크 사용이 증가한다.
+    // insert 문을 만들 때 사용할 값을 Map 에 담는다.
+    HashMap<String,Object> params = new HashMap<>();
+    params.put("boardNo", boardNo);
+    params.put("files", files);
+
+    // 한 번에 여러 개의 값을 insert 하는 방법?
+    // - 다음과 같이 여러 개의 값을 한 번에 저장하는 insert 문을 생성한다.
+    //     insert into x_board_file(file_path, board_id)
+    //     values (파일명, 게시글번호),(파일명, 게시글번호),(파일명, 게시글번호),...
+    // - 위와 같이 만든 insert 문장 한 개를 실행한다.
+    //   즉 이것은 DBMS에 한 번만 요청한다는 의미다.
     // 
-    // 여러 개의 데이터 입력을 한 번에 처리하는 방법은 없을까?
-    // - insert 를 한 번만 요청하면 된다.
-    // 
-    int count = 0;
-    for (AttachFile file : files) {
-      count += sqlSession.insert("BoardMapper.insert1", file);
-    }
+    int count = sqlSession.insert("BoardMapper.insert2", params);
     System.out.printf("%d 개의 데이터를 입력 했음!\n", count);
 
     sqlSession.close();
