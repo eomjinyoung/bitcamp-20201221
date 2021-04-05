@@ -5,30 +5,52 @@
 
 <mapper namespace="BoardMapper">
   
-  <update id="update1" parameterType="board">
-    update x_board set
-      <if test="title != null">
-        title=#{title},
-      </if>
-      <if test="content != null">
-        contents=#{content}
-      </if>
-    where board_id=#{no}
-  </update>
+  <resultMap type="Board" id="BoardMap">
+    <id column="board_id" property="no"/> 
+    <result column="contents" property="content"/>
+    <result column="created_date" property="registeredDate"/>
+    <result column="view_count" property="viewCount"/>
+  </resultMap>
   
-  <!-- set 태그는 컬럼 값을 변경하는 문장 앞뒤에 쓸데없이 붙어 있는 콤마(,)를 제거해 준다. -->
-  <update id="update2" parameterType="board">
-    update x_board 
-    <set>
-      <if test="title != null">
-        title=#{title},
+  <!-- foreach 를 사용하지 않으면 값의 개수 만큼 SQL 코드를 작성해야 한다. -->
+  <select id="select1" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    <where> 1=0
+      <if test="keyword1 != ''">
+        or title like concat('%', #{keyword1}, '%')
       </if>
-      <if test="content != null">
-        contents=#{content}
+      <if test="keyword2 != ''">
+        or title like concat('%', #{keyword2}, '%')
       </if>
-    </set>  
-    where board_id=#{no}
-  </update>
+      <if test="keyword3 != ''">
+        or title like concat('%', #{keyword3}, '%')
+      </if>
+    </where>
+    order by board_id desc
+  </select>
+
+  <!-- foreach를 사용하면 값 개수 만큼 SQL 코드를 반복적으로 생성할 수 있다.  -->
+  <select id="select2" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    <where> 1=0
+      <foreach collection="keywords" item="keyword">
+        or title like concat('%', #{keyword}, '%')
+      </foreach>
+    </where>
+    order by board_id desc
+  </select>
   
 </mapper>
 

@@ -1,4 +1,4 @@
-// Dynamic SQL - if 태그의 필요성
+// Dynamic SQL - update 문에 if 태그의 활용 
 package com.eomcs.mybatis.ex04.d;
 
 import java.util.Scanner;

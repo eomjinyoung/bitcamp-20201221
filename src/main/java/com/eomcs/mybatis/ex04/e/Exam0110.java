@@ -1,6 +1,8 @@
-// Dynamic SQL - if 태그의 필요성
+// Dynamic SQL - foreach 태그의 필요성
 package com.eomcs.mybatis.ex04.e;
 
+import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -12,46 +14,44 @@ public class Exam0110 {
   public static void main(String[] args) throws Exception {
     Scanner keyboard = new Scanner(System.in);
 
-    Board board = new Board();
+    System.out.print("검색어1? ");
+    String keyword1 = keyboard.nextLine();
 
-    // 게시글 번호 입력 받기
-    System.out.print("변경할 게시글의 번호? ");
-    board.setNo(Integer.parseInt(keyboard.nextLine()));
+    System.out.print("검색어2? ");
+    String keyword2 = keyboard.nextLine();
 
-    System.out.print("제목?(건너 뛰기: 빈 문자열) ");
-    String input = keyboard.nextLine();
-    if (input.length() > 0) {
-      board.setTitle(input);
-    }
-
-    System.out.print("내용?(건너 뛰기: 빈 문자열) ");
-    input = keyboard.nextLine();
-    if (input.length() > 0) {
-      board.setContent(input);
-    }
+    System.out.print("검색어3? ");
+    String keyword3 = keyboard.nextLine();
 
     keyboard.close();
 
     SqlSession sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream(
-        "com/eomcs/mybatis/ex04/d/mybatis-config.xml")).openSession(true);
+        "com/eomcs/mybatis/ex04/e/mybatis-config.xml")).openSession();
 
-    // if 태그를 활용하면 전체 컬럼이 아니라 일부 항목만 변경하는 SQL을 만들 수 있다.
-    // 테스트 1)
-    //   - 제목, 내용 모두 변경하기
-    // 텍스트 2)
-    //   - 내용만 변경하기
-    // 테스트 3)
-    //   - 제목만 변경하기
-    //   - set 다음에 오는 문장 뒤에 콤마(,)가 붙기 때문에 SQL 문법 오류가 발생한다.
-    //        update x_board set                 
-    //               title=?,    <=== 문장 뒤에 콤마(,)가 붙어 있다.                     
-    //        where board_id=?
-    //   - 해결책?
-    //     <set> 태그를 사용하라!
+    // 여러 개의 검색어로 데이터를 찾을 때
+    // => 최대 3개의 검색어로 제한하는 경우
+    HashMap<String,Object> params = new HashMap<>();
+    params.put("keyword1", keyword1);
+    params.put("keyword2", keyword2);
+    params.put("keyword3", keyword3);
+
+    // if 태그를 사용하는 방식의 한계는
+    // - 조건의 개수가 고정된다.
+    // - 즉 if 태그의 개수만큼만 조건을 검사할 수 있다.
+    // - 조건 개수를 늘리려면 if 태그를 추가해야 한다.
+    // 해결책?
+    // - foreach 태그를 사용하라!
     // 
-    int count = sqlSession.update("BoardMapper.update1", board);
+    List<Board> boards = sqlSession.selectList("BoardMapper.select1", params);
 
-    System.out.println(count);
+    for (Board b : boards) {
+      System.out.printf("%d,%s,%s,%s,%d\n",
+          b.getNo(),
+          b.getTitle(),
+          b.getContent(),
+          b.getRegisteredDate(),
+          b.getViewCount());
+    }
 
     sqlSession.close();
   }
