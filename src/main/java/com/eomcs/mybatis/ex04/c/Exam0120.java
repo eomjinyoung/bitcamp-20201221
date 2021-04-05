@@ -32,7 +32,7 @@ public class Exam0120 {
     params.put("menuNo", menuNo);
     params.put("keyword", keyword);
 
-    List<Board> boards = sqlSession.selectList("BoardMapper.select2", params);
+    List<Board> boards = sqlSession.selectList("BoardMapper.select0120", params);
 
     for (Board b : boards) {
       System.out.printf("%d,%s,%s,%s,%d\n",
