@@ -38,9 +38,8 @@
     order by board_id desc
   </select>
   
-  <!-- 여러 SQL 문에 공통으로 포함되는 코드가 있다면 다음과 같이 
-       별도의 sql 태그에 작성해 두고 사용하면 편리하다. -->
-  <sql id="sql1">
+  <!-- if 태그를 사용하면 값의 유무에 따라 SQL 문을 제어할 수 있다. -->
+  <select id="select3" resultMap="BoardMap" parameterType="map">
     select 
       board_id,
       title,    
@@ -48,25 +47,16 @@
       created_date, 
       view_count  
     from x_board
-  </sql>
-  
-  <sql id="sql2">
+    where 
+      <if test="menuNo == 1">
+        title like concat('%', #{keyword}, '%')
+      </if>
+      <if test="menuNo == 2">
+        contents like concat('%', #{keyword}, '%')
+      </if>
     order by board_id desc
-  </sql>
-  
-    <!-- 제목으로 게시글 검색하기 -->
-  <select id="select3" resultMap="BoardMap" parameterType="string">
-    <include refid="sql1"/>
-    where title like concat('%', #{value}, '%')
-    <include refid="sql2"/>
   </select>
   
-  <!-- 내용으로 게시글 검색하기 -->
-  <select id="select4" resultMap="BoardMap" parameterType="string">
-    <include refid="sql1"/>
-    where contents like concat('%', #{value}, '%')
-    <include refid="sql2"/>
-  </select>
 </mapper>
 
 
