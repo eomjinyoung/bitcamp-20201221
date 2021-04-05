@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="BoardMapper">
+  
+  <resultMap type="Board" id="BoardMap">
+    <id column="board_id" property="no"/> 
+    <result column="contents" property="content"/>
+    <result column="created_date" property="registeredDate"/>
+    <result column="view_count" property="viewCount"/>
+  </resultMap>
+  
+  <!-- 다음 SQL 문의 문제점은 
+       조건에 일치하는 경우가 없을 때 
+       where 다음에 놓이는 조건문이 없다는 것이다.
+       그래서 실행할 때 SQL문법 오류가 발생한다. -->
+  <select id="select1" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    where 
+      <if test="menuNo == 1">
+        title like concat('%', #{keyword}, '%')
+      </if>
+      <if test="menuNo == 2">
+        contents like concat('%', #{keyword}, '%')
+      </if>
+    order by board_id desc
+  </select>
+
+  
+  <select id="select2" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    <where> 
+      <if test="menuNo == 1">
+        title like concat('%', #{keyword}, '%')
+      </if>
+      <if test="menuNo == 2">
+        contents like concat('%', #{keyword}, '%')
+      </if>
+    </where>
+    order by board_id desc
+  </select>
+  
+  <!-- where 절에 여러 개의 조건이 삽입될 때 문제점 -->
+  <select id="select3" resultMap="BoardMap" parameterType="map">
+    select 
+      board_id,
+      title,    
+      contents,
+      created_date, 
+      view_count  
+    from x_board
+    where 
+      <if test="title != null">
+        title like concat('%', #{keyword}, '%')
+      </if>
+      <if test="contents != null">
+        and contents like concat('%', #{keyword}, '%')
+      </if>
+    order by board_id desc
+  </select>
+</mapper>
+
+
+
+
+
+
+
