@@ -1124,4 +1124,4 @@
 - Mybatis Persistence 프레임워크(com.eomcs.mybatis)
     - ex05 : 테이블 조인 다루기
 - 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
-    - 32-a 단계: DB 프로그래밍 더 쉽고 간단히 하는 방법 : Mybatis 퍼시스턴스 프레임워크 도입
+    - 32-a 단계: DB 프로그래밍을 더 쉽고 간단히 하는 방법 : Mybatis 퍼시스턴스 프레임워크 도입
