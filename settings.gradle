@@ -8,4 +8,3 @@
  */
 
 rootProject.name = 'bitcamp-20201221'
-include('app')
