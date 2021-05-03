@@ -1251,3 +1251,8 @@
 - 웹프로그래밍(eomcs-java-web)
     - src-02/com/eomcs/web/ex03/* : 서블릿의 구동 원리 및 만들고 배치하는 방법
     - src-02/com/eomcs/web/ex04/* : 필터, 리스너의 구동원리 및 만들고 배치하는 방법
+
+## 91일차(2021-05-03,월)
+
+- 웹프로그래밍(eomcs-java-web)
+    - src-02/com/eomcs/web/ex04/* : GET, POST 요청
