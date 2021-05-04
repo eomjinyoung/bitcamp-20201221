@@ -1256,3 +1256,14 @@
 
 - 웹프로그래밍(eomcs-java-web)
     - src-02/com/eomcs/web/ex04/* : GET, POST 요청
+    - src-02/com/eomcs/web/ex05/* : HttpServlet 클래스 사용법
+    - HTML 사용법
+
+## 92일차(2021-05-04,화)
+
+- 웹프로그래밍(eomcs-java-web)
+    - HTML 사용법(계속)
+- DB 모델링
+    - ExERD 모델링 도구 설치
+    - DB 모델링 방법
+
