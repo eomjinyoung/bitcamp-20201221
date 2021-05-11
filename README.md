@@ -1285,3 +1285,10 @@
     - 깃 기본 사용법
 - 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
     - 31-a 단계: Servlet 기술 활용하기 : GET/POST 요청 구분과 HTML 도입하기(계속)
+
+## 96일차(2021-05-11,화)
+
+- git 사용법(eomcs-docs/git-user-guide)
+    - 깃 기본 사용법(계속)
+- 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
+    - 31-a 단계: Servlet 기술 활용하기 : GET/POST 요청 구분과 HTML 도입하기(계속)
