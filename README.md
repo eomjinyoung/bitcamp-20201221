@@ -1321,5 +1321,8 @@
 
 ## 101일차(2021-05-17,화)
 
+- 웹프로그래밍(eomcs-java-web)
+    - src-02/main/webapp/el : Expression Language 사용법
+    
 - 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
     - 32-d 단계: MVC 아키텍처로 전환하기 : JSTL(JSP Standard Tag Library) 사용하기
