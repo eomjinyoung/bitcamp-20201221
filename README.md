@@ -1319,10 +1319,24 @@
     - 32-b 단계: MVC 아키텍처로 전환하기 : JSP 엘리먼트와 JSP 액션 태그 사용하기
     - 32-c 단계: MVC 아키텍처로 전환하기 : EL(Expression Language) 사용하기
 
-## 101일차(2021-05-17,화)
+## 101일차(2021-05-18,화)
 
 - 웹프로그래밍(eomcs-java-web)
     - src-02/main/webapp/el : Expression Language 사용법
     - src-02/main/webapp/jstl : JSTL 사용법
 - 실습 프로젝트 : mini-pms(프로젝트 관리 시스템)
     - 32-d 단계: MVC 아키텍처로 전환하기 : JSTL(JSP Standard Tag Library) 사용하기
+
+## 102일차(2021-05-20,목)
+
+- 웹프로그래밍(eomcs-java-web)
+    - src-02/main/webapp/css : CSS 사용법
+
+## 103일차(2021-05-21,금)
+
+- 웹프로그래밍(eomcs-java-web)
+    - src-02/main/webapp/css : CSS 사용법(계속)
+
+
+
+    
