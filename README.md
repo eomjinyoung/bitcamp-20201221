@@ -1334,8 +1334,13 @@
 
 ## 103일차(2021-05-21,금)
 
-- 웹프로그래밍(eomcs-java-web)
+- 웹프로그래밍(eomcs-java-web) 
     - src-02/main/webapp/css : CSS 사용법(계속)
+
+## 104일차(2021-05-24,월)
+
+- 웹프로그래밍(eomcs-java-web) 
+    - src-02/main/webapp/javascript : 자바스크립트 사용법
 
 
 
