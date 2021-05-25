@@ -1341,7 +1341,11 @@
 
 - 웹프로그래밍(eomcs-java-web) 
     - src-02/main/webapp/javascript : 자바스크립트 사용법
+        - ex00, ex01, ex02 : 자바스크립트 개요, script 태그 사용법, 변수 다루기
 
+## 105일차(2021-05-25,화)
 
+- 웹프로그래밍(eomcs-java-web) 
+    - src-02/main/webapp/javascript : 자바스크립트 사용법(계속)
 
     
