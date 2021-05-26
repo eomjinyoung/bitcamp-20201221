@@ -1347,5 +1347,12 @@
 
 - 웹프로그래밍(eomcs-java-web) 
     - src-02/main/webapp/javascript : 자바스크립트 사용법(계속)
+        - ex02, ex03, ex04 : 흐름제어문, 함수, 객체 다루기
+
+## 106일차(2021-05-26,수)
+
+- 웹프로그래밍(eomcs-java-web) 
+    - src-02/main/webapp/javascript : 자바스크립트 사용법(계속)
+        - ex04, ex05, ex06 : DOM API, 이벤트, AJAX 다루기
 
     
