@@ -1361,4 +1361,9 @@
     - src-02/main/webapp/javascript : 자바스크립트 사용법(계속)
         - ex07, myquery : AJAX 다루기, jQuery 만들기
 
+## 108일차(2021-05-28,금)
+
+- 웹프로그래밍(eomcs-java-web) 
+    - src-02/main/webapp/javascript : 자바스크립트 사용법(계속)
+        - ex07, myquery : AJAX 다루기, jQuery 만들기
     
