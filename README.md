@@ -1384,12 +1384,12 @@
 ## 111일차(2021-06-02,수)
 
 - 스프링 WebMVC(eomcs-spring-webmvc) 
-    - src-xx : 스프링 WebMVC 사용법
+    - src-00 ~ 11 : 스프링 WebMVC 사용법
 
 ## 112일차(2021-06-03,목)
 
 - 스프링 WebMVC(eomcs-spring-webmvc) 
-    - src-xx : 스프링 WebMVC 사용법 (계속)
+    - src-12 ~ 14 : 스프링 WebMVC 사용법 (계속)
 
 ## 113일차(2021-06-04,금)
 
